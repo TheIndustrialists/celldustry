@@ -10,6 +10,8 @@ public class DesktopLauncher {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 		config.setForegroundFPS(60);
 		config.setTitle("celldustry");
+		config.setWindowedMode(800,400);
+		config.useVsync(true);
 		new Lwjgl3Application(new celldustry(), config);
 	}
 }
